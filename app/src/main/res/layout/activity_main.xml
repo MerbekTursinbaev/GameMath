@@ -94,36 +94,40 @@
         app:layout_constraintTop_toTopOf="@id/line1"/>
 
     <Button
-        android:id="@+id/Button1"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClick"
         app:layout_constraintStart_toStartOf="@id/line6"
         app:layout_constraintEnd_toEndOf="@id/line7"
         app:layout_constraintTop_toTopOf="@id/line2"
         app:layout_constraintBottom_toBottomOf="@id/line3"/>
 
     <Button
-        android:id="@+id/Button2"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClick"
         app:layout_constraintStart_toStartOf="@id/line7"
         app:layout_constraintEnd_toEndOf="@id/line8"
         app:layout_constraintTop_toTopOf="@id/line2"
         app:layout_constraintBottom_toBottomOf="@id/line3"/>
 
     <Button
-        android:id="@+id/Button3"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClick"
         app:layout_constraintStart_toStartOf="@id/line6"
         app:layout_constraintEnd_toEndOf="@id/line7"
         app:layout_constraintTop_toTopOf="@id/line3"
         app:layout_constraintBottom_toBottomOf="@id/line4"/>
 
     <Button
-        android:id="@+id/Button4"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClick"
         app:layout_constraintStart_toStartOf="@id/line7"
         app:layout_constraintEnd_toEndOf="@id/line8"
         app:layout_constraintTop_toTopOf="@id/line3"
@@ -133,6 +137,8 @@
         android:id="@+id/table"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:textColor="@color/black"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@id/line5"
         app:layout_constraintTop_toTopOf="@id/line4"
         android:gravity="center"/>
