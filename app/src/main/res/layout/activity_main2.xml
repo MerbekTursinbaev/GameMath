@@ -28,4 +28,27 @@
         android:textColor="@color/cardview_dark_background"
         android:textSize="40sp"
         android:layout_marginTop="28dp"/>
+
+    <Button
+        android:id="@+id/buttonResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp"
+        android:text="Na'tiyjeler"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/buttonResult"
+        app:layout_constraintTop_toTopOf="@id/buttonResult"
+        app:layout_constraintBottom_toBottomOf="@id/buttonResult"
+        android:layout_margin="20dp"
+        android:text="Artqa"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

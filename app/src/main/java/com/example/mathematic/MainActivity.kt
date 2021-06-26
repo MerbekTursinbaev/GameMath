@@ -6,15 +6,17 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
 import android.widget.Button
+import kotlinx.android.synthetic.main.activity_kiriw.*
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
-    var q = 0  //juwaplardi sanaw kerek edi ham sanap atir isledi :)
+    var q = 0
     val signs = arrayOf("+", "-", "*", "/")
     var a: ArrayList<Button> = arrayListOf()
     val z = mutableListOf(-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         timer.start()
     }
 
-    val timer = object : CountDownTimer(60000,5000) {
+    val timer = object : CountDownTimer(60000,60000) {
         override fun onTick(millisUntilFinished: Long) {
             belgi()
         }
