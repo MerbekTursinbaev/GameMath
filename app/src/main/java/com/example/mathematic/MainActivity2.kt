@@ -10,7 +10,7 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        natiyje = intent.getIntExtra("durisjuwap",0)
+        natiyje = intent.getIntExtra("durisjuwap", 0)
         juwap.text = "${natiyje}"
 
         buttonBack.setOnClickListener {

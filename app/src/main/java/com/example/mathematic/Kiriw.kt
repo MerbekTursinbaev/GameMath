@@ -11,7 +11,7 @@ class Kiriw : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kiriw)
-
+        userName.error = "Atindi kirit"
         buttonStart.setOnClickListener {
             startActivity(Intent(this,MainActivity::class.java))
         }
