@@ -8,10 +8,12 @@ import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_kiriw.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.recycler_view.*
 import java.util.*
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
+
     var q = 0
     val signs = arrayOf("+", "-", "*", "/")
     var a: ArrayList<Button> = arrayListOf()
@@ -22,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         a = arrayListOf(button1, button2, button3, button4)
         belgi()
-        val timer = object : CountDownTimer(60000, 60000) {
+        val timer = object : CountDownTimer(10000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 text4.text = (millisUntilFinished / 1000).toString()
             }
@@ -35,13 +37,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun goToResultActivity() {
+
+        //user qosiw kerek kod 
+        var user: String? = intent.getStringExtra("ati")
         val intent = Intent(this, MainActivity2::class.java)
         intent.putExtra("durisjuwap", q)
+        intent.putExtra("username", user)
         // intent.putExtra("durisjuwap",intent.getStringExtra("durisjuwap"))
         startActivity(intent)
         finish()
     }
-/*
+
+    /*
     fun mintent() {
         val intent = Intent(this,Result::class.java)
         intent.putExtra("durisjuwap",q)

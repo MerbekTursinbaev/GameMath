@@ -6,9 +6,9 @@ import com.example.mathematic.Result
 import java.util.*
 
 @Entity(tableName = "Result")
-data class User (
-    @PrimaryKey
-    val id: Int,
+data class User(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
     val name: String,
     val score: Int
-        )
+)
