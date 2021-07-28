@@ -10,6 +10,7 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+
         natiyje = intent.getIntExtra("durisjuwap", 0)
         juwap.text = "${natiyje}"
 
@@ -18,7 +19,10 @@ class MainActivity2 : AppCompatActivity() {
         }
 
         buttonResult.setOnClickListener {
-            startActivity(Intent(this, Result::class.java))
+            var user: String? = intent.getStringExtra("username")
+            val intent = Intent(this,Result::class.java)
+
+           // startActivity(Intent(this, Result::class.java))
         }
     }
 }
