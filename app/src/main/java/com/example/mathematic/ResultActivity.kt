@@ -27,10 +27,12 @@ class Result : AppCompatActivity() {
         recyclerView.adapter = mAdapter
         currentResult = intent.getIntExtra("durisjuwap", 0)
         name = intent.getStringExtra("username").toString()
+
         val user = User(
             name = name,
             score = currentResult
         )
+
         setData()
         dao.insert(user)
         //  maxScore = preferences.getInt("max_score",0)
@@ -43,7 +45,7 @@ class Result : AppCompatActivity() {
         //  tvMaxScore.text = "Max Score is ${preferences.getInt("max_score",0)}"
     }
 
-    fun setData() {
+    private fun setData() {
         dao = MyDataBase.getInstance(this).resultDao()
         mAdapter.models = dao.getAllResult()
     }
