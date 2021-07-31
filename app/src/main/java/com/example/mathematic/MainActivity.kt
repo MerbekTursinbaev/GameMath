@@ -43,17 +43,10 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, MainActivity2::class.java)
         intent.putExtra("durisjuwap", q)
         intent.putExtra("username", user)
-        // intent.putExtra("durisjuwap",intent.getStringExtra("durisjuwap"))
         startActivity(intent)
         finish()
     }
 
-    /*
-    fun mintent() {
-        val intent = Intent(this,Result::class.java)
-        intent.putExtra("durisjuwap",q)
-        startActivity(intent)
-    }*/
 
     fun belgi() {
         var x = Random.nextInt(-150, 250)

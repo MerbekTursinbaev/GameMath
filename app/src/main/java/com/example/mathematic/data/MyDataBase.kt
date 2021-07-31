@@ -18,7 +18,7 @@ abstract class MyDataBase : RoomDatabase() {
                     MyDataBase::class.java, "Result-database"
                 )
                     .allowMainThreadQueries()
-                    // .createFromAsset("Result.db")
+                    .createFromAsset("Result.db")
                     .build()
             }
             return INSTANCE
