@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mathematic.data.User
 import kotlinx.android.synthetic.main.activity_result.view.*
 
-class MyAdapter : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+ class MyAdapter : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun populateModel(user : User) {
@@ -31,4 +31,4 @@ class MyAdapter : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
     }
 
     override fun getItemCount() = models.size
-}
+ }

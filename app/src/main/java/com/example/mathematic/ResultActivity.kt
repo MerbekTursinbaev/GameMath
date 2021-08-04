@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mathematic.data.MyDao
 import com.example.mathematic.data.MyDataBase
-import com.example.mathematic.data.User
 import kotlinx.android.synthetic.main.recycler_view.*
 
 class ResultActivity : AppCompatActivity() {
